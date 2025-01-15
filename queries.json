@@ -1,0 +1,99 @@
+[
+    {
+        "query": "adverse events per year.sql",
+        "x_axis": "year",
+        "y_axis": "cnt",
+        "title": "Number of Adverse Events by Year",
+        "xlabel": "Year",
+        "ylabel": "Adverse Event Count",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "year",
+        "hover_data": {
+            "cnt": true,
+            "year": true
+        }
+    },
+    {
+        "query": "Deaths Counts by Vaccine Name and Date Range.sql",
+        "x_axis": "Date_Range",
+        "y_axis": "Death_Count",
+        "title": "Deaths Counts by Vaccine Name and Date Range",
+        "xlabel": "Date Range",
+        "ylabel": "Death Count",
+        "plot_type": "bar",
+        "log_scale": false,
+        "color": "VAX_NAME",
+        "hover_data": {
+            "Death_Count": true,
+            "Date_Range": true,
+            "VAX_NAME": true
+        }
+    },
+    {
+        "query": "time-to-event analysis.sql",
+        "x_axis": "Time_To_Event_Range",
+        "y_axis": "Event_Count",
+        "title": "Time to Adverse Event Onset After Vaccination",
+        "xlabel": "Time to Event (Days)",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": false,
+        "color": "Time_To_Event_Range",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Deaths by age group and vaccine.sql",
+        "x_axis": "Age_Group",
+        "y_axis": "Total_Events",
+        "title": "Deaths by age group and vaccine",
+        "xlabel": "Age Group",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "VAX_NAME",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Deaths by gender and vaccine.sql",
+        "x_axis": "Gender",
+        "y_axis": "Total_Events",
+        "title": "Deaths by gender and vaccine",
+        "xlabel": "Gender",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "VAX_NAME",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Deaths by state and vaccine.sql",
+        "x_axis": "State",
+        "y_axis": "Total_Events",
+        "title": "Deaths by state and vaccine",
+        "xlabel": "State",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "VAX_NAME",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Symptoms for Females less than 18 and Pfizer Biontech vaccine.sql",
+        "x_axis": "SYMPTOM",
+        "y_axis": "Symptom_Count",
+        "title": "Symptoms for Females less than 18 and Pfizer Biontech vaccine",
+        "xlabel": "Symptoms",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": false,
+        "color": "SYMPTOM",
+        "hover_data": {
+        }
+    }
+
+]
