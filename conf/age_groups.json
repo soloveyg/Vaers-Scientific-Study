@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Unknown",
+        "min_age": null,
+        "max_age": null,
+        "description": "Age is unknown or not provided"
+    },
+    {
+        "name": "0-17",
+        "min_age": 0,
+        "max_age": 17,
+        "description": "Children and adolescents"
+    },
+    {
+        "name": "18-30",
+        "min_age": 18,
+        "max_age": 30,
+        "description": "Young adults"
+    },
+    {
+        "name": "31-50",
+        "min_age": 31,
+        "max_age": 50,
+        "description": "Adults"
+    },
+    {
+        "name": "51-65",
+        "min_age": 51,
+        "max_age": 65,
+        "description": "Older adults nearing retirement age"
+    },
+    {
+        "name": "65+",
+        "min_age": 66,
+        "max_age": null,
+        "description": "Seniors or retired individuals"
+    }
+]

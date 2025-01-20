@@ -1,0 +1,145 @@
+[
+    {
+        "query": "adverse events per year.sql",
+        "x_axis": "year",
+        "y_axis": "cnt",
+        "title": "Number of Adverse Events by Year",
+        "xlabel": "Year",
+        "ylabel": "Adverse Event Count",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "year",
+        "hover_data": {
+            "cnt": true,
+            "year": true
+        }
+    },
+    {
+        "query": "Deaths Counts by Vaccine Name and Date Range.sql",
+        "x_axis": "Date_Range",
+        "y_axis": "Death_Count",
+        "title": "Deaths Counts by Vaccine Name and Date Range",
+        "xlabel": "Date Range",
+        "ylabel": "Death Count",
+        "plot_type": "bar",
+        "log_scale": false,
+        "color": "VAX_NAME",
+        "hover_data": {
+            "Death_Count": true,
+            "Date_Range": true,
+            "VAX_NAME": true
+        }
+    },
+    {
+        "query": "time-to-event analysis.sql",
+        "x_axis": "Time_To_Event_Range",
+        "y_axis": "Event_Count",
+        "title": "Time to Adverse Event Onset After Vaccination",
+        "xlabel": "Time to Event (Days)",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": false,
+        "color": "Time_To_Event_Range",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Deaths by age group and vaccine.sql",
+        "x_axis": "Age_Group",
+        "y_axis": "Total_Events",
+        "title": "Deaths by age group and vaccine",
+        "xlabel": "Age Group",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "VAX_NAME",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Deaths by gender and vaccine.sql",
+        "x_axis": "Gender",
+        "y_axis": "Total_Events",
+        "title": "Deaths by gender and vaccine",
+        "xlabel": "Gender",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "VAX_NAME",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Deaths by state and vaccine.sql",
+        "x_axis": "State",
+        "y_axis": "Total_Events",
+        "title": "Deaths by state and vaccine",
+        "xlabel": "State",
+        "ylabel": "Number of Events",
+        "plot_type": "bar",
+        "log_scale": true,
+        "color": "VAX_NAME",
+        "hover_data": {
+        }
+    },
+    {
+        "query": "Male Symptoms for Age Group and COVID vaccines.sql",
+        "x_axis": "vax_name",
+        "y_axis": "age_group",
+        "size": "scaled_events",
+        "color": "SYMPTOM",
+        "hover_name": "SYMPTOM",
+        "title": "Male Symptoms for Age Group and COVID vaccines",
+        "labels":{
+            "symptom_count": "Number of Events", 
+            "age_group": "Age Group", 
+            "SYMPTOM": "Symptom",
+            "vax_name": "Vaccine",
+            "scaled_events": "Normalized Event Number"},
+        "plot_type": "scatter",
+        "log_scale": false,
+        "xaxis_title": "Vaccine Name",
+        "yaxis_title": "Age Group",
+        "legend_title": "Symptom",
+        "template": "plotly_white",
+        "hover_data": {
+            "vax_name": true,
+            "symptom_count": true, 
+            "scaled_events": ":.2f", 
+            "vax_name Jittered": false,
+            "age_group Jittered": false,
+            "age_group": true,
+            "SYMPTOM": true}
+    },
+    {
+        "query": "Female Symptoms for Age Group and COVID vaccines.sql",
+        "x_axis": "vax_name",
+        "y_axis": "age_group",
+        "size": "scaled_events",
+        "color": "SYMPTOM",
+        "hover_name": "SYMPTOM",
+        "title": "Female Symptoms for Age Group and COVID vaccines",
+        "labels":{
+            "symptom_count": "Number of Events", 
+            "age_group": "Age Group", 
+            "SYMPTOM": "Symptom",
+            "vax_name": "Vaccine",
+            "scaled_events": "Normalized Event Number"},
+        "plot_type": "scatter",
+        "log_scale": false,
+        "xaxis_title": "Vaccine Name",
+        "yaxis_title": "Age Group",
+        "legend_title": "Symptom",
+        "template": "plotly_white",
+        "hover_data": {
+            "vax_name": true,
+            "symptom_count": true, 
+            "scaled_events": ":.2f", 
+            "vax_name Jittered": false,
+            "age_group Jittered": false,
+            "age_group": true,
+            "SYMPTOM": true}
+    }
+
+
+]
