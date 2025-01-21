@@ -40,29 +40,29 @@ Run the following script to create a login. Replace VAERS_User and StrongPasswor
 CREATE LOGIN VAERS_User \
 WITH PASSWORD = 'StrongPassword123!',\
      CHECK_POLICY = ON; -- Enforces password complexity\
-GO\
+GO
 
 Create a Database User for the VAERS Database.
 Run the following script to map the login to the database:
 
--- Switch to the master database to ensure context
-USE master;
+-- Switch to the master database to ensure context\
+USE master;\
 GO
 
--- Create the VAERS database
-CREATE DATABASE VAERS;
+-- Create the VAERS database\
+CREATE DATABASE VAERS;\
 GO
 
--- Switch to the VEARS database
-USE VAERS;
+-- Switch to the VEARS database\
+USE VAERS;\
 GO
 
--- Create a user for the VEARS database
-CREATE USER VAERS_User FOR LOGIN VAERS_User;
+-- Create a user for the VEARS database\
+CREATE USER VAERS_User FOR LOGIN VAERS_User;\
 GO
 
--- Assign the user necessary roles (e.g., db_owner for full control)
-EXEC sp_addrolemember 'db_owner', 'VAERS_User';
+-- Assign the user necessary roles (e.g., db_owner for full control)\
+EXEC sp_addrolemember 'db_owner', 'VAERS_User';\
 GO
 
 #### Step 3
