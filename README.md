@@ -7,7 +7,6 @@ The motivation to create the VEARS scientific study stemmed from my aspiration t
 I used the following technologies:
 - MS SQL as the database
 - Python for data manipulation and plotting the analyses
-    todo: List the required libraries that do not come out of the box
 
 ### Data source
 As the source of information, I used the VAERS database maintained by the CDC.
@@ -20,10 +19,51 @@ If you want to reproduce the analysis you should follow the steps below.
 Install Python. I used version 3.12.8
 https://www.python.org/downloads/
 
+After installing Python, run the following commands in a terminal to install the required libraries:
+pip install pandas
+pip install SQLAlchemy
+pip install plotly
+pip install numpy
+
 #### Step 2
 
 Install MS SQL Server. Select the Developer version when downloading.
 https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+
+Launch SQL Server Management Studio.
+Connect the SQL Server instance with an account that has administrative privileges.
+
+Create a login for the management account.
+Run the following script to create a login. Replace VAERS_User and StrongPassword123! with your desired username and password.
+
+-- Create a SQL Server login
+CREATE LOGIN VAERS_User 
+WITH PASSWORD = 'StrongPassword123!',
+     CHECK_POLICY = ON; -- Enforces password complexity
+GO
+
+Create a Database User for the VAERS Database.
+Run the following script to map the login to the database:
+
+-- Switch to the master database to ensure context
+USE master;
+GO
+
+-- Create the VAERS database
+CREATE DATABASE VAERS;
+GO
+
+-- Switch to the VEARS database
+USE VAERS;
+GO
+
+-- Create a user for the VEARS database
+CREATE USER VAERS_User FOR LOGIN VAERS_User;
+GO
+
+-- Assign the user necessary roles (e.g., db_owner for full control)
+EXEC sp_addrolemember 'db_owner', 'VAERS_User';
+GO
 
 #### Step 3
 
