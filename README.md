@@ -36,11 +36,11 @@ Connect the SQL Server instance with an account that has administrative privileg
 Create a login for the management account.
 Run the following script to create a login. Replace VAERS_User and StrongPassword123! with your desired username and password.
 
--- Create a SQL Server login
-CREATE LOGIN VAERS_User 
-WITH PASSWORD = 'StrongPassword123!',
-     CHECK_POLICY = ON; -- Enforces password complexity
-GO
+-- Create a SQL Server login\
+CREATE LOGIN VAERS_User \
+WITH PASSWORD = 'StrongPassword123!',\
+     CHECK_POLICY = ON; -- Enforces password complexity\
+GO\
 
 Create a Database User for the VAERS Database.
 Run the following script to map the login to the database:
