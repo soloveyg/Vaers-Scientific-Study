@@ -1,6 +1,6 @@
 ## VAERS Research
 
-### Motivations
+### Motivation:
 The motivation to create the VEARS scientific study stemmed from my aspiration to explore the field of data science as a new graduate while contributing to meaningful research during a time of global importance. The COVID-19 pandemic provided an abundance of data, presenting a unique opportunity to analyze trends and uncover insights through the creation of detailed graphs and visualizations. This project allowed me to delve into data manipulation, visualization, and analysis using SQL and Python, enabling me to merge my curiosity for data science with a chance to understand patterns and trends in pandemic-related information better.
 
 ### Technologies
