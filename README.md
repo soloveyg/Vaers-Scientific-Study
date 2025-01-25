@@ -97,7 +97,7 @@ Once the HTML has been processed, open the file explorer in the html sub-directo
 
 ### Available  reports:
 
-<a href="nm">Deaths Counts by Vaccine Name and Date Range</a>
+<a href="https://html-preview.github.io/?url=https://github.com/soloveyg/Vaers-Scientific-Study/blob/main/html/Deaths%20Counts%20by%20Vaccine%20Name%20and%20Date%20Range.html">Deaths Counts by Vaccine Name and Date Range</a>
 
 <a href="https://html-preview.github.io/?url=https://github.com/soloveyg/Vaers-Scientific-Study/blob/main/html/Deaths%20by%20age%20group%20and%20vaccine.html">Deaths by age group and vaccine</a>
 
