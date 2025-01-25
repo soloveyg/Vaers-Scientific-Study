@@ -116,5 +116,4 @@ Once the HTML has been processed, open the file explorer in the html sub-directo
 
 <a href="https://html-preview.github.io/?url=https://github.com/soloveyg/Vaers-Scientific-Study/blob/main/html/Time%20to%20Adverse%20Event%20Onset%20After%20Vaccination.html">Time to Adverse Event Onset After Vaccination</a>
 
-<a href="https://html-preview.github.io/?url=https://github.com/soloveyg/Vaers-Scientific-Study/blob/main/html/Number%20of%20Adverse%20Events%20by%20Year.html">Number of Adverse Events by Year</a>
 
